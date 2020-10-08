@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <Compile Remove="Identity\Migrations\20201006115158_IdentityInitial_Migration.cs" />
+    <Compile Remove="Identity\Migrations\20201006115158_IdentityInitial_Migration.Designer.cs" />
+    <Compile Remove="Migrations\20200812123307_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200812123307_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200930070646_thirdMigration.cs" />
+    <Compile Remove="Migrations\20200930070646_thirdMigration.Designer.cs" />
+    <Compile Remove="Migrations\Basket\20200930114303_IdentityItemMigration.cs" />
+    <Compile Remove="Migrations\Basket\20200930114303_IdentityItemMigration.Designer.cs" />
+    <Compile Remove="Migrations\Basket\20200930115621_IdentityItemMigration.cs" />
+    <Compile Remove="Migrations\Basket\20200930115621_IdentityItemMigration.Designer.cs" />
+    <Compile Remove="Migrations\Basket\20200930115839_IdentityItemMigration.cs" />
+    <Compile Remove="Migrations\Basket\20200930115839_IdentityItemMigration.Designer.cs" />
+    <Compile Remove="Migrations\Basket\20200930120203_Id_BasketItem_Migration.cs" />
+    <Compile Remove="Migrations\Basket\20200930120203_Id_BasketItem_Migration.Designer.cs" />
+    <Compile Remove="Migrations\Basket\20200930120402_Id_BasketItem_Migration.cs" />
+    <Compile Remove="Migrations\Basket\20200930120402_Id_BasketItem_Migration.Designer.cs" />
+    <Compile Remove="Migrations\Basket\20200930131847_list_basketMigration.cs" />
+    <Compile Remove="Migrations\Basket\20200930131847_list_basketMigration.Designer.cs" />
+    <Compile Remove="Migrations\Basket\20201005083130_customerBasketId_Migration.cs" />
+    <Compile Remove="Migrations\Basket\20201005083130_customerBasketId_Migration.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.8" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
+    <PackageReference Include="StackExchange.Redis" Version="2.1.58" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
+    <PackageReference Include="System.Text.Json" Version="4.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\SeedData\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>
