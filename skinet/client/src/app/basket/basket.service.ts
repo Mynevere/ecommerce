@@ -70,7 +70,7 @@ export class BasketService {
     }
   }
 
-  //duhet rishikuar
+  
   removeItemFromBasket(item: IBasketItem) {
     const basket = this.getCurrentBasketValue();
     if (basket.items.some(x => x.id === item.id)) {

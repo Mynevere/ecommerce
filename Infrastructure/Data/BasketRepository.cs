@@ -24,8 +24,15 @@ namespace Infrastructure.Data
             var basket = _basketContext.CustomerBaskets.Find(basketId);
             if (basket != null)
             {
-                _basketContext.Remove(basket);
+                if(basket.Items.Count == 0)
+                {
+                    var item = _basketContext.BasketItems.Where(x => x.CustomerBasketId == basketId).FirstOrDefault();
+                    _basketContext.BasketItems.Remove(item);
+                }
+                _basketContext.CustomerBaskets.Remove(basket);
                 await _basketContext.SaveChangesAsync();
+
+                return true; 
             }
             return false;
         }
@@ -54,32 +61,36 @@ namespace Infrastructure.Data
                 Id = basket.Id,
             };
 
-            List<BasketItem> basketItems = basket.Items;
-
-            for (int i = 0; i < basketItems.Count; i++)
+            for (int i = 0; i < basket.Items.Count; i++)
             {
-
-                if (_basketContext.BasketItems.Find(basketItems[i].Id) == null) 
+                if (_basketContext.BasketItems.Find(basket.Items[i].Id) == null) 
                 {
                     if(_basketContext.CustomerBaskets.Find(created.Id) == null)
                     {
                         _basketContext.CustomerBaskets.Add(created);
-                        basketItems[i].CustomerBasketId = created.Id;    
-                        _basketContext.BasketItems.Update(basketItems[i]);
+                        basket.Items[i].CustomerBasketId = created.Id;    
+                        _basketContext.BasketItems.Update(basket.Items[i]);
                     }
                     else
                     {
-                        basketItems[i].CustomerBasketId = created.Id;
-                        _basketContext.BasketItems.AddRange(basketItems[i]);   
+                        basket.Items[i].CustomerBasketId = created.Id;
+                        _basketContext.BasketItems.AddRange(basket.Items[i]);   
                     }
                 }
-                if(_basketContext.BasketItems.Find(basketItems[i].Id) != null)
+                if(_basketContext.BasketItems.Find(basket.Items[i].Id) != null)
                 {
-                    var item = _basketContext.BasketItems.Find(basketItems[i].Id);
-                    item.Quantity = basketItems[i].Quantity;
+                    var item = _basketContext.BasketItems.Find(basket.Items[i].Id);
+                    item.Quantity = basket.Items[i].Quantity;
 
+                    foreach (var currentItem in _basketContext.BasketItems.Where(x => x.CustomerBasketId == created.Id).ToList())
+                    {
+                        if (!basket.Items.Any(item => item.Id == currentItem.Id))   
+                        {
+                            _basketContext.BasketItems.Remove(currentItem); 
+                        }
+                    }
                     _basketContext.CustomerBaskets.Update(created);
-                    _basketContext.BasketItems.Update(item);  
+                    _basketContext.BasketItems.Update(item);
                 }
                 else { continue; }
 
