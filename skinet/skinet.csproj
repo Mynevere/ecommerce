@@ -43,6 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="client\src\app\core\guards\" />
     <Folder Include="client\src\app\core\services\" />
     <Folder Include="client\src\app\shared\components\" />
     <Folder Include="wwwroot\" />

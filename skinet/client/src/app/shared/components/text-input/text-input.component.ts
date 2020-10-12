@@ -12,13 +12,11 @@ export class TextInputComponent implements OnInit, ControlValueAccessor {
   @Input() label: string;
 
   constructor(@Self() public controlDir: NgControl) {
-    debugger
     this.controlDir.valueAccessor = this;
   }
 
 
   ngOnInit(): void {
-    debugger
     const control = this.controlDir.control;
     console.log(control);
     const validators = control.validator ? [control.validator] : [];
