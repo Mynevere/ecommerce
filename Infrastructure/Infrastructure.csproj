@@ -7,6 +7,10 @@
     <Compile Remove="Migrations\20200812123307_InitialCreate.Designer.cs" />
     <Compile Remove="Migrations\20200930070646_thirdMigration.cs" />
     <Compile Remove="Migrations\20200930070646_thirdMigration.Designer.cs" />
+    <Compile Remove="Migrations\20201012122837_DeliveryMethodId.cs" />
+    <Compile Remove="Migrations\20201012122837_DeliveryMethodId.Designer.cs" />
+    <Compile Remove="Migrations\20201012123247_DeliveryMethodId.cs" />
+    <Compile Remove="Migrations\20201012123247_DeliveryMethodId.Designer.cs" />
     <Compile Remove="Migrations\Basket\20200930114303_IdentityItemMigration.cs" />
     <Compile Remove="Migrations\Basket\20200930114303_IdentityItemMigration.Designer.cs" />
     <Compile Remove="Migrations\Basket\20200930115621_IdentityItemMigration.cs" />
