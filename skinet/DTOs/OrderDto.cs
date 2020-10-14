@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace skinet.DTOs
 {
-    public class OderDto
+    public class OrderDto
     {
         public string BasketId { get; set; }
         public int DeliveryMethodId { get; set; } 
