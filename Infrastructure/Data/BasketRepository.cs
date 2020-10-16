@@ -59,6 +59,9 @@ namespace Infrastructure.Data
             CustomerBasket created = new CustomerBasket
             {
                 Id = basket.Id,
+                DeliveryMethodId = basket.DeliveryMethodId,
+                ClientSecret = basket.ClientSecret,
+                PaymentIntentId = basket.PaymentIntentId
             };
 
             for (int i = 0; i < basket.Items.Count; i++)

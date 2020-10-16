@@ -1551,6 +1551,20 @@
           "lib/netstandard2.0/StackExchange.Redis.dll": {}
         }
       },
+      "Stripe.net/39.16.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
+          "Newtonsoft.Json": "11.0.1",
+          "System.Configuration.ConfigurationManager": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Stripe.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Stripe.net.dll": {}
+        }
+      },
       "Swashbuckle.AspNetCore.Swagger/5.5.1": {
         "type": "package",
         "dependencies": {
@@ -1872,7 +1886,7 @@
           "System.Security.Permissions": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
@@ -3217,6 +3231,7 @@
           "Microsoft.Extensions.Hosting.Abstractions": "3.1.8",
           "Microsoft.IdentityModel.Tokens": "6.7.1",
           "StackExchange.Redis": "2.1.58",
+          "Stripe.net": "39.16.0",
           "System.IdentityModel.Tokens.Jwt": "6.7.1",
           "System.Text.Json": "4.7.2"
         },
@@ -5535,6 +5550,25 @@
         "lib/netstandard2.0/StackExchange.Redis.xml",
         "stackexchange.redis.2.1.58.nupkg.sha512",
         "stackexchange.redis.nuspec"
+      ]
+    },
+    "Stripe.net/39.16.0": {
+      "sha512": "O4Sht6fompvHyBr1BdQdqlo00ZnjF2mWic1huVqQuNJdcQyLT8USg4LbZqg4zMos9flfwSmZeW9e+dody24q6A==",
+      "type": "package",
+      "path": "stripe.net/39.16.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/net461/Stripe.net.dll",
+        "lib/net461/Stripe.net.pdb",
+        "lib/net461/Stripe.net.xml",
+        "lib/netstandard2.0/Stripe.net.dll",
+        "lib/netstandard2.0/Stripe.net.pdb",
+        "lib/netstandard2.0/Stripe.net.xml",
+        "stripe.net.39.16.0.nupkg.sha512",
+        "stripe.net.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore.Swagger/5.5.1": {
