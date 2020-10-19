@@ -26,8 +26,8 @@ namespace Infrastructure.Data
             {
                 if(basket.Items.Count == 0)
                 {
-                    var item = _basketContext.BasketItems.Where(x => x.CustomerBasketId == basketId).FirstOrDefault();
-                    _basketContext.BasketItems.Remove(item);
+                    var items = _basketContext.BasketItems.Where(x => x.CustomerBasketId == basketId);
+                    _basketContext.BasketItems.RemoveRange(items);
                 }
                 _basketContext.CustomerBaskets.Remove(basket);
                 await _basketContext.SaveChangesAsync();
@@ -39,10 +39,10 @@ namespace Infrastructure.Data
 
         public async Task<CustomerBasket> GetBasketAsync(string basketId)
         {
-            var basketItems = _basketContext.BasketItems.ToListAsync(); 
-            for(int i = 0; i < basketItems.Result.Count; i++)
+            var basketItems = await _basketContext.BasketItems.ToListAsync(); 
+            for(int i = 0; i < basketItems.Count; i++)
             {
-                if(basketItems.Result[i].CustomerBasketId == basketId)
+                if(basketItems[i].CustomerBasketId == basketId)
                 {
                     var basket = _basketContext.CustomerBaskets.Find(basketId);
                     if (basket != null)
@@ -61,7 +61,8 @@ namespace Infrastructure.Data
                 Id = basket.Id,
                 DeliveryMethodId = basket.DeliveryMethodId,
                 ClientSecret = basket.ClientSecret,
-                PaymentIntentId = basket.PaymentIntentId
+                PaymentIntentId = basket.PaymentIntentId,
+                ShippingPrice = basket.ShippingPrice
             };
 
             for (int i = 0; i < basket.Items.Count; i++)
