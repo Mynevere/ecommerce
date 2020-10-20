@@ -10046,11 +10046,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\skinetUdemy\\skinet\\skinet.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\skinetUdemy\\skinet\\skinet.csproj",
       "projectName": "skinet",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\skinetUdemy\\skinet\\skinet.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\skinetUdemy\\skinet\\skinet.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\skinetUdemy\\skinet\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\skinetUdemy\\skinet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -10069,8 +10069,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\skinetUdemy\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\skinetUdemy\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\Admin\\source\\skinetUdemy\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\skinetUdemy\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
