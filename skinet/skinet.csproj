@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="bin\**" />
+    <Content Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
+    <TypeScriptCompile Remove="bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="client\node_modules\font-awesome\css\font-awesome.css" />
     <Content Include="client\node_modules\font-awesome\css\font-awesome.min.css" />
     <Content Include="client\node_modules\font-awesome\fonts\fontawesome-webfont.eot" />
@@ -13,6 +21,26 @@
     <Content Include="client\node_modules\font-awesome\fonts\FontAwesome.otf" />
     <Content Include="client\node_modules\font-awesome\HELP-US-OUT.txt" />
     <Content Include="client\node_modules\font-awesome\package.json" />
+    <Content Include="Content\images\.DS_Store" />
+    <Content Include="Content\images\products\.DS_Store" />
+    <Content Include="Content\images\products\boot-ang1.png" />
+    <Content Include="Content\images\products\boot-ang2.png" />
+    <Content Include="Content\images\products\boot-core1.png" />
+    <Content Include="Content\images\products\boot-core2.png" />
+    <Content Include="Content\images\products\boot-redis1.png" />
+    <Content Include="Content\images\products\glove-code1.png" />
+    <Content Include="Content\images\products\glove-code2.png" />
+    <Content Include="Content\images\products\glove-react1.png" />
+    <Content Include="Content\images\products\glove-react2.png" />
+    <Content Include="Content\images\products\hat-core1.png" />
+    <Content Include="Content\images\products\hat-react1.png" />
+    <Content Include="Content\images\products\hat-react2.png" />
+    <Content Include="Content\images\products\sb-ang1.png" />
+    <Content Include="Content\images\products\sb-ang2.png" />
+    <Content Include="Content\images\products\sb-core1.png" />
+    <Content Include="Content\images\products\sb-core2.png" />
+    <Content Include="Content\images\products\sb-react1.png" />
+    <Content Include="Content\images\products\sb-ts1.png" />
   </ItemGroup>
 
   <ItemGroup>

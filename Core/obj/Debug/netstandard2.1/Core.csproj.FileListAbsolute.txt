@@ -9,8 +9,16 @@ C:\Users\Admin\source\repos\skinet\Core\obj\Debug\netstandard2.1\Core.pdb
 C:\Users\Admin\source\repos\skinetUdemy\Core\bin\Debug\netstandard2.1\Core.deps.json
 C:\Users\Admin\source\repos\skinetUdemy\Core\bin\Debug\netstandard2.1\Core.dll
 C:\Users\Admin\source\repos\skinetUdemy\Core\bin\Debug\netstandard2.1\Core.pdb
-C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Debug\netstandard2.1\Core.csprojAssemblyReference.cache
 C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Debug\netstandard2.1\Core.AssemblyInfoInputs.cache
 C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Debug\netstandard2.1\Core.AssemblyInfo.cs
 C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Debug\netstandard2.1\Core.dll
 C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Debug\netstandard2.1\Core.pdb
+C:\Users\Admin\source\skinetUdemy\Core\bin\Debug\netstandard2.1\Core.deps.json
+C:\Users\Admin\source\skinetUdemy\Core\bin\Debug\netstandard2.1\Core.dll
+C:\Users\Admin\source\skinetUdemy\Core\bin\Debug\netstandard2.1\Core.pdb
+C:\Users\Admin\source\skinetUdemy\Core\obj\Debug\netstandard2.1\Core.csprojAssemblyReference.cache
+C:\Users\Admin\source\skinetUdemy\Core\obj\Debug\netstandard2.1\Core.AssemblyInfoInputs.cache
+C:\Users\Admin\source\skinetUdemy\Core\obj\Debug\netstandard2.1\Core.AssemblyInfo.cs
+C:\Users\Admin\source\skinetUdemy\Core\obj\Debug\netstandard2.1\Core.dll
+C:\Users\Admin\source\skinetUdemy\Core\obj\Debug\netstandard2.1\Core.pdb
+C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Debug\netstandard2.1\Core.csprojAssemblyReference.cache

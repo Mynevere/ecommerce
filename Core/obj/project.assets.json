@@ -5899,11 +5899,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\skinetUdemy\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\skinetUdemy\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\Admin\\source\\skinetUdemy\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\skinetUdemy\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\skinetUdemy\\Core\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\skinetUdemy\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

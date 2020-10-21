@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sdcu4Z9MWvDjWZjBGQk8aaglgZKwwCN4SQXjIb4OTCDzYAgstdsV5NgALNXsFUfmA+bs8iK5zwyPnvZMJluzQg==",
+  "dgSpecHash": "mJSVh7CF+9c2r9Em8YkULw0i8J5B09ioJp6yXGYoPH1x6rV/mAjt9kyWpMwh0BJacWmAYZmmWG7W6u23BP+Mug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\skinet\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\skinetUdemy\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

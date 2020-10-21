@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using AutoMapper;
 using Infrastructure.Data.Context;
 using Infrastructure.Identity;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using skinet.Extenstions;
 using skinet.Helpers;
 using skinet.Middleware;
@@ -30,8 +32,8 @@ namespace API
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers().AddNewtonsoftJson();
 
+            //Skinet database configuration
             string connectionString = Configuration.GetConnectionString("DefaultConnection");
-
             Action<DbContextOptionsBuilder> p = x =>
                    x.UseSqlServer(connectionString);
             services.AddDbContext<StoreContext>(p);
@@ -41,10 +43,12 @@ namespace API
                 x.UseSqlServer(connectionString);
             });
 
+            //SkinetBasket database configuration
             string connectionStringBasket = Configuration.GetConnectionString("BasketDb");
             Action<DbContextOptionsBuilder> z = x => 
             x.UseSqlServer(connectionStringBasket);
             services.AddDbContext<BasketContext>(z);
+
 
             services.AddApplicationServices();
             services.AddIdentityServices(Configuration);
@@ -69,6 +73,13 @@ namespace API
 
             app.UseRouting();
             app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(),"Content")
+                ), RequestPath="/content"
+            });
+
 
             app.UseCors("CorsPolicy");
 
@@ -80,6 +91,7 @@ namespace API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapFallbackToController("Index", "Fallback"); 
             });
         }
     }

@@ -3,28 +3,8 @@
   <ItemGroup>
     <Compile Remove="Identity\Migrations\20201006115158_IdentityInitial_Migration.cs" />
     <Compile Remove="Identity\Migrations\20201006115158_IdentityInitial_Migration.Designer.cs" />
-    <Compile Remove="Migrations\20200812123307_InitialCreate.cs" />
-    <Compile Remove="Migrations\20200812123307_InitialCreate.Designer.cs" />
-    <Compile Remove="Migrations\20200930070646_thirdMigration.cs" />
-    <Compile Remove="Migrations\20200930070646_thirdMigration.Designer.cs" />
-    <Compile Remove="Migrations\20201012122837_DeliveryMethodId.cs" />
-    <Compile Remove="Migrations\20201012122837_DeliveryMethodId.Designer.cs" />
-    <Compile Remove="Migrations\20201012123247_DeliveryMethodId.cs" />
-    <Compile Remove="Migrations\20201012123247_DeliveryMethodId.Designer.cs" />
-    <Compile Remove="Migrations\Basket\20200930114303_IdentityItemMigration.cs" />
-    <Compile Remove="Migrations\Basket\20200930114303_IdentityItemMigration.Designer.cs" />
-    <Compile Remove="Migrations\Basket\20200930115621_IdentityItemMigration.cs" />
-    <Compile Remove="Migrations\Basket\20200930115621_IdentityItemMigration.Designer.cs" />
-    <Compile Remove="Migrations\Basket\20200930115839_IdentityItemMigration.cs" />
-    <Compile Remove="Migrations\Basket\20200930115839_IdentityItemMigration.Designer.cs" />
-    <Compile Remove="Migrations\Basket\20200930120203_Id_BasketItem_Migration.cs" />
-    <Compile Remove="Migrations\Basket\20200930120203_Id_BasketItem_Migration.Designer.cs" />
-    <Compile Remove="Migrations\Basket\20200930120402_Id_BasketItem_Migration.cs" />
-    <Compile Remove="Migrations\Basket\20200930120402_Id_BasketItem_Migration.Designer.cs" />
-    <Compile Remove="Migrations\Basket\20200930131847_list_basketMigration.cs" />
-    <Compile Remove="Migrations\Basket\20200930131847_list_basketMigration.Designer.cs" />
-    <Compile Remove="Migrations\Basket\20201005083130_customerBasketId_Migration.cs" />
-    <Compile Remove="Migrations\Basket\20201005083130_customerBasketId_Migration.Designer.cs" />
+    <Compile Remove="Migrations\Basket\20201021080656_testMigration.cs" />
+    <Compile Remove="Migrations\Basket\20201021080656_testMigration.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

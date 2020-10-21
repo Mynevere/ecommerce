@@ -1,0 +1,9 @@
+C:\Users\Admin\source\repos\skinetUdemy\Core\bin\Release\netstandard2.1\Core.deps.json
+C:\Users\Admin\source\repos\skinetUdemy\Core\bin\Release\netstandard2.1\Core.dll
+C:\Users\Admin\source\repos\skinetUdemy\Core\bin\Release\netstandard2.1\Core.pdb
+C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Release\netstandard2.1\Core.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Release\netstandard2.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Release\netstandard2.1\Core.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Release\netstandard2.1\Core.AssemblyInfo.cs
+C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Release\netstandard2.1\Core.dll
+C:\Users\Admin\source\repos\skinetUdemy\Core\obj\Release\netstandard2.1\Core.pdb
