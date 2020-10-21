@@ -1,4 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+publish
+wwwroot
+.vs/*
 
 # compiled output
 /dist
@@ -30,8 +33,7 @@ speed-measure-plugin*.json
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
-.vs/*
-/.vs
+
 
 # misc
 /.sass-cache
@@ -47,5 +49,4 @@ testem.log
 .DS_Store
 Thumbs.db
 .vs/
-publish
-wwwroot
+
