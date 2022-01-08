@@ -33,7 +33,7 @@ namespace API
             services.AddControllers().AddNewtonsoftJson();
 
             //Skinet database configuration
-            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+            string connectionString = Configuration.GetConnectionString("eCommerceConnection");
             Action<DbContextOptionsBuilder> p = x =>
                    x.UseSqlServer(connectionString);
             services.AddDbContext<StoreContext>(p);
@@ -44,7 +44,7 @@ namespace API
             });
 
             //SkinetBasket database configuration
-            string connectionStringBasket = Configuration.GetConnectionString("BasketDb");
+            string connectionStringBasket = Configuration.GetConnectionString("eCommerceBasketConnection");
             Action<DbContextOptionsBuilder> z = x => 
             x.UseSqlServer(connectionStringBasket);
             services.AddDbContext<BasketContext>(z);

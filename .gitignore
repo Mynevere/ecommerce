@@ -58,4 +58,11 @@ testem.log
 .DS_Store
 Thumbs.db
 .vs/
-
+/skinet/appsettings.json
+/Core/bin/Debug/netstandard2.1
+/Infrastructure/bin/Debug/netstandard2.1
+/skinet/client/package.json
+/skinet/client/package-lock.json
+/skinet/bin/Debug/netcoreapp3.1/client/e2e
+/skinet/bin/Debug/netcoreapp3.1/client
+/skinet/bin/Debug/netcoreapp3.1

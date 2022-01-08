@@ -14,7 +14,7 @@ namespace skinet.Extenstions
         {
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SkiNet API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "eCommerce API", Version = "v1" });
 
 
                 //Swagger config for identity 
